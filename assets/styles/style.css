@@ -1,7 +1,8 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     font-size: 16px;
     line-height: 1;
+    font-family: 'Press Start 2P', cursive;
   }
   
   textarea {
@@ -19,6 +20,7 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    font-family: 'Press Start 2P', cursive;
   }
   
   .description {
@@ -58,6 +60,7 @@ body {
   }
   
   .saveBtn {
+    background-image: url("../images/saveIcon.png");
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -65,8 +68,19 @@ body {
     color: white;
   }
   
+  .saveBtn:hover  {
+    box-shadow: 7px, 7px, 7px, greenyellow;
+  }
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
-  
+  .taskInput {
+    min-width: 100%;
+    min-height: auto;
+    padding: 1rem;
+  }
+  .timeZone {
+    margin: 15px;
+    padding: 25px;
+  }
