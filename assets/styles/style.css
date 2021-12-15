@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     line-height: 1;
     font-family: 'Press Start 2P', cursive;
+    background-color: rgb(54, 54, 54);
   }
   
   textarea {
@@ -17,7 +18,7 @@ body {
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: black;
+    color:greenyellow;
     border-radius: 0;
     border-bottom: 10px solid black;
     font-family: 'Press Start 2P', cursive;
@@ -31,7 +32,11 @@ body {
     text-align: center;
     border-radius: 15px;
   }
-  
+  .table {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: black;
+  }
   .row {
     white-space: pre-wrap;
     height: 80px;
@@ -39,9 +44,10 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
+    background-color:rgb(54, 54, 54);
+    color: greenyellow;
     border-top: 1px dashed #000000;
+    text-align: center;
   }
   
   .past {
