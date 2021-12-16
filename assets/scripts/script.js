@@ -11,46 +11,74 @@ function addTask(event) {
 
 }
 
-// saveBtn.addEventlistener("sumbit", addTask)
+
+
+saveBtn.addEventListener("click", function(event){
+   event.preventDefault();
+   if (input)
+
+
+})
+
 
 // varparentcontainertr=this.captureEvents.captureEventsvarhour=parentcontainertr.attrid.splimport {  } from "varinputcontrol - parentcontainertr.findinput
 // varvalue-inputcontrol.varvalueclocalroage.setitemhourvalue";
+//Saving the task in the localstorage and displaying it
+// saveBtn.on("click", function () {
+//    var timeSlot = $(this).parent().parent()
+//    var hour = timeSlot.attr("id").split("-")[1]
+//    var userInput = timeSlot.find("input")
+//    var value = userInput.val()
+//    localStorage.setItem(hour, value)
+// })
+// for (var index = 9; index < 18; index++) {
+//    var parentContainerTr = $("#hour-" + index)
+//    var userInput = parentContainerTr.find("input")
+//    var value = localStorage.getItem(index)
+//    userInput.val(value)
+// }
+//highlighting hours past/present/future
+//set time format to military time
 
-saveBtn.on("click", function () {
-   var parentContainerTr = $(this).parent().parent()
-   var hour = parentContainerTr.attr("id").split("-")[1]
-   var userInput = parentContainerTr.find("input")
-   var value = userInput.val()
-   localStorage.setItem(hour, value)
-})
+// function illuminate()   {
+//    var currentHour = moment()
+//    $(".time").each(function(){
+//       var taskRow = $(this)
+//       var tableHeader = taskRow.find('th')
+//       var tableData = taskRow.attr("id").split("-")[1]
+//       if (hour < currentHour) {
+//          tableHeader.addClass("past")
+//          tableData.addClass("past")
+//       }
+//       else if (hour === currentHour)
 
-for (var index = 9; index < 18; index++) {
-   var parentContainerTr = $("#hour-" + index)
-   var userInput = parentContainerTr.find("input")
-   var value = localStorage.getItem(index)
-   userInput.val(value)
-}
+//    })
+// }
 
 function illuminate() {
-   var currentHour = moment()
-   $(".time").each(function() {
-      var trContainer = $(this)
-      var th = trContainer.find("th")
-      var td = trContainer.attr("id").split("-")[1]
-      if (hour < currentHour) {
-         th.addClass("past")
-         td.addClass('past')
-      }
-      else if (hour === currentHour) {
-         th.addClass("present")
-         td.addClass("present")
-      }
-      else if (hour > currentHour) {
-         th.addClass("future")
-         td.addClass("future")
-      }
-   })
+   
 }
+
+// function illuminate() {
+//    var currentHour = moment()
+//    $(".time").each(function() {
+//       var trContainer = $(this)
+//       var th = trContainer.find("th")
+//       var td = trContainer.attr("id").split("-")[1]
+//       if (hour < currentHour) {
+//          th.addClass("past")
+//          td.addClass('past')
+//       }
+//       else if (hour === currentHour) {
+//          th.addClass("present")
+//          td.addClass("present")
+//       }
+//       else if (hour > currentHour) {
+//          th.addClass("future")
+//          td.addClass("future")
+//       }
+//    })
+// }
 
 
 // var currentHour = moment();
