@@ -4,16 +4,18 @@ var dateTime = function () {
    $("#currentDay").text(today);
 };
 setInterval(dateTime, 1000);
-var taskBlock = $(".writtenTask")
-var saveBtn = $(".saveBtn")
+var taskBlock = $(".writtenTask");
+var saveBtn = $(".saveBtn");
 var hour = $(".hour");
+var tableHeader = $("th");
+var tableData = $('td');
 var dayHour = hour;
 var taskInput = $(".taskInput")
 var hourlyTask = {
 taskHour: hour.text,
 theTask: taskInput.value,
 }
-console.log(dayHour);
+//console.log(dayHour);
 var saveBtn = $(".saveBtn")
 var taskInput =$(".taskInput")
 var nine = document.getElementById("time-9").getAttribute("data-time");
@@ -27,12 +29,10 @@ var sixteen = document.getElementById("time-16").getAttribute("data-time");
 var seventeen = document.getElementById("time-17").getAttribute("data-time");
 
 var workHours = document.querySelectorAll(".timeZone");
-console.log(workHours);
+//console.log(workHours);
 console.log(workHours[0].getAttribute("data-time"));
 
 var scheduleHour = []
-console.log(scheduleHour);
-
 console.log(scheduleHour);
 var globalTime = moment().format("HH");
 console.log(globalTime);
@@ -58,13 +58,18 @@ function illuminate() {
    }
 }
 }
+illuminate();
+// console.log(taskInput.val);
 
-function writeTask() {
-   var writtenTask = taskInput.value;
-   taskBlock.append(writtenTask);
-}
-
-saveBtn.on("click", writeTask);
+// function writeTask() {
+//    if (taskInput.value){
+//    var writtenTask = document.createElement("p");
+//    writtenTask.textContent = taskInput.val;
+//    taskInput.append(writtenTask);  
+//    }
+//    else return;   
+// }
+// saveBtn.on("click", writeTask);
 // function addTask(event) {
 //    event.preventDefault;
 //    var hour = $(this).parent.parent.child[0];
