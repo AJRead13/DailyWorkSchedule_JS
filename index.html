@@ -35,6 +35,7 @@ THEN the saved events persist -->
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
+    <img src="./assets/images/pacman-eating-dots.gif" alt="pacman-eating-dots">
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
@@ -47,55 +48,55 @@ THEN the saved events persist -->
         </tr>
       </thead>
       <tbody>
-        <tr id="time-9" class=timeZone>
+        <tr id="time-9" data-time="9" class=timeZone>
           <th class="hour" scope="row">9</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-10" class=timeZone>
+        <tr id="time-10" data-time="10" class=timeZone>
           <th class="hour" scope="row">10</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-11" class=timeZone>
+        <tr id="time-11" data-time="11" class=timeZone>
           <th class="hour" scope="row">11</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-12" class=timeZone>
+        <tr id="time-12" data-time="12" class=timeZone>
           <th class="hour" scope="row">12</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-13" class=timeZone>
+        <tr id="time-13" data-time="13" class=timeZone>
           <th class="hour" scope="row">1</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-14" class=timeZone>
+        <tr id="time-14" data-time="14" class=timeZone>
           <th class="hour" scope="row">2<pm/th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-15" class=timeZone>
+        <tr id="time-15" data-time="15" class=timeZone>
           <th class="hour" scope="row">3</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-16" class=timeZone>
+        <tr id="time-16" data-time="16" class=timeZone>
           <th class="hour" scope="row">4</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
           <td><button class="savebtn">save</button></td>
         </tr>
-        <tr id="time-17" class=timeZone>
+        <tr id="time-17" data-time="17" class=timeZone>
           <th class="hour" scope="row">5</th>
           <td class="tasks"><input class="taskInput"></input></td>
             <div class="writtenTask"></div>
@@ -104,7 +105,7 @@ THEN the saved events persist -->
       </tbody>
     </table>
   </div>
-  <footer><img src="./assets/images/pacman-eating-dots.gif" alt="pacman-eating-dots"></footer>
+  <footer>Stay on<span><img src="./assets/images/pacman-eating-dots.gif" alt="pacman-eating-dots"></span>   Target</footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="assets/scripts/script.js"></script>

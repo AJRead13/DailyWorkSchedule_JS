@@ -90,5 +90,6 @@ body {
     padding: 25px;
   }
   footer {
-    align-items: baseline;
+    text-align: center;
+    color: yellow;
   }

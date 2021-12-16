@@ -14,9 +14,50 @@ taskHour: hour.text,
 theTask: taskInput.value,
 }
 console.log(dayHour);
-
 var saveBtn = $(".saveBtn")
 var taskInput =$(".taskInput")
+var nine = document.getElementById("time-9").getAttribute("data-time");
+var ten = document.getElementById("time-10").getAttribute("data-time");
+var eleven = document.getElementById("time-11").getAttribute("data-time");
+var twelve = document.getElementById("time-12").getAttribute("data-time");
+var thirteen = document.getElementById("time-13").getAttribute("data-time");
+var fourteen = document.getElementById("time-14").getAttribute("data-time");
+var fifteen = document.getElementById("time-15").getAttribute("data-time");
+var sixteen = document.getElementById("time-16").getAttribute("data-time");
+var seventeen = document.getElementById("time-17").getAttribute("data-time");
+
+var workHours = document.querySelectorAll(".timeZone");
+console.log(workHours);
+console.log(workHours[0].getAttribute("data-time"));
+
+var scheduleHour = []
+console.log(scheduleHour);
+
+console.log(scheduleHour);
+var globalTime = moment().format("HH");
+console.log(globalTime);
+var timeNumber = parseInt(globalTime);
+console.log(timeNumber);
+
+function illuminate() {
+   for(i = 0; i < workHours.length; i++){
+   var newHour = parseInt(i);
+   scheduleHour.push(i);
+   console.log(scheduleHour);
+   if (newHour < timeNumber){
+      tableHeader.addClass("past");
+      tableData.addClass("past");
+   }
+   else if (newHour === timeNumber){
+      tableHeader.addClass("present");
+      tableData.addClass("present");
+   }
+   else if (newHour > timeNumber){
+      tableHeader.addClass("future");
+      tableData.addClass("future");
+   }
+}
+}
 
 function writeTask() {
    var writtenTask = taskInput.value;
@@ -69,9 +110,9 @@ saveBtn.on("click", writeTask);
 //    })
 // }
 
-function illuminate() {
+// function illuminate() {
    
-}
+// }
 
 // function illuminate() {
 //    var currentHour = moment()
