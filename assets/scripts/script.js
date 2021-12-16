@@ -1,24 +1,38 @@
+//displaying live time
 var dateTime = function () {
    var today = moment().format("MMM Do YYYY h:mm:ss");
    $("#currentDay").text(today);
 };
 setInterval(dateTime, 1000);
+var taskBlock = $(".writtenTask")
+var saveBtn = $(".saveBtn")
+var hour = $(".hour");
+var dayHour = hour;
+var taskInput = $(".taskInput")
+var hourlyTask = {
+taskHour: hour.text,
+theTask: taskInput.value,
+}
+console.log(dayHour);
 
 var saveBtn = $(".saveBtn")
+var taskInput =$(".taskInput")
 
-function addTask(event) {
-   event.preventDefault;
-
+function writeTask() {
+   var writtenTask = taskInput.value;
+   taskBlock.append(writtenTask);
 }
 
+saveBtn.on("click", writeTask);
+// function addTask(event) {
+//    event.preventDefault;
+//    var hour = $(this).parent.parent.child[0];
+//    localStorage.setItem(hour, taskInput.val())
+// };
+// //
 
 
-saveBtn.addEventListener("click", function(event){
-   event.preventDefault();
-   if (input)
-
-
-})
+//saveBtn.addEventListener("click", addTask)
 
 
 // varparentcontainertr=this.captureEvents.captureEventsvarhour=parentcontainertr.attrid.splimport {  } from "varinputcontrol - parentcontainertr.findinput
