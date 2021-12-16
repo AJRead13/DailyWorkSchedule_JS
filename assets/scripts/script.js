@@ -9,7 +9,7 @@ var saveBtn = $(".saveBtn");
 var hour = $(".hour");
 var tableHeader = $("th");
 var tableData = $('td');
-var dayHour = hour;
+//var dayHour = hour;
 var taskInput = $(".taskInput")
 var hourlyTask = {
 taskHour: hour.text,
@@ -40,7 +40,7 @@ var timeNumber = parseInt(globalTime);
 console.log(timeNumber);
 
 function illuminate() {
-   for(i = 0; i < workHours.length; i++){
+   for(i = 9; i < 18; i++){
    var newHour = parseInt(i);
    scheduleHour.push(i);
    console.log(scheduleHour);
@@ -59,6 +59,27 @@ function illuminate() {
 }
 }
 illuminate();
+
+var hourlyTask = {
+   taskHour: hour.text,
+   theTask: taskInput.value,
+   }
+console.log(hourlyTask);
+
+function renderTasks() {
+   var task = localStorage.getItem(theTask);
+   var taskTime = localStorage.getItem(taskHour);
+   if (!task || !taskTime) {
+      return;
+   }
+}
+
+function saveTask() {
+   var savedTask = taskInput.value;
+   var taskedTime = hour.text;
+   localStorage.setItem()
+
+}
 // console.log(taskInput.val);
 
 // function writeTask() {
