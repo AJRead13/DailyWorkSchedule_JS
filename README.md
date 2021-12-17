@@ -13,7 +13,7 @@
 ## Installation
 No install required
 ## Usage
-Open in browser.  
+Open in browser.  https://ajread13.github.io/DailyWorkSchedule_JS/
 ## Screenshot
 ![screenshot start](assets/images/mainScreen.png) 
 
